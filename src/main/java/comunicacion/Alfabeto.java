@@ -1,7 +1,7 @@
 package comunicacion;
 
 public class Alfabeto extends Pictograma {
-	private String[] letras;
+	private String[] letras = null;
 	private String interpretacion;
 	
 
@@ -37,10 +37,12 @@ public class Alfabeto extends Pictograma {
 	@Override 
 	public String toString(){
 		String cadaLetra ="";
-		for(int i = 0; i<=letras.length;i++) {
-			cadaLetra += letras[i]+", ";
+		for(int i = 0; i < letras.length; i++) {
+			cadaLetra += letras[i];
+			if (i < letras.length-1) {
+				cadaLetra += ", ";
 			}
-	cadaLetra +=letras[letras.length-1];	
+			}
 	return cadaLetra;
 	}
 }
