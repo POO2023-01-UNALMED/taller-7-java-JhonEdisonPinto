@@ -40,7 +40,7 @@ public class Alfabeto extends Pictograma {
 		for(int i = 0; i<=letras.length;i++) {
 			cadaLetra += letras[i];
 			if (i<letras.length-1) {
-				cadaLetra += ",";
+				cadaLetra += ", ";
 			}
 		}
 	return cadaLetra;
